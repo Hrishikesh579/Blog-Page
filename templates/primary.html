@@ -1,0 +1,7 @@
+{% extends "index.html" %}
+{% block content %}
+    {% for post in post%}
+            <h1>{{post.title}}</h1>
+            <p>By {{post.author}} which is added on {{post.date_added}}</p>        
+    {% endfor %}
+{% endblock content %}
