@@ -23,3 +23,15 @@ def about():
     return render_template('about.html', title = 'About')
 if __name__ == "__main__":
     app.run(debug=True)
+
+@app.route('/login')
+def login():
+    return render_template('login.html', title='Login')
+if __name__ == "__main__":
+    app.run(debug=True)
+
+@app.route('/shfg')
+def about():
+    return render_template('shfg.html', title = 'sf')
+if __name__ == "__main__":
+    app.run(debug=True)
